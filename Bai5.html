@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let arr_1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+        let arr_2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+
+        function find_star(str) {
+        if (arr_1.indexOf(str) === -1) {
+        alert(`${str} không phải là tên ngôi sao!`);
+        return '';
+    }
+        return arr_2[arr_1.indexOf(str)];
+    }
+
+        document.write(find_star(prompt('Nhập vào tên ngôi sao:')));
+</script>
